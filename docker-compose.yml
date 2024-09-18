@@ -2,11 +2,8 @@ version: '3.4'
 
 services:
   galaxy:
-    image: galaxy
     build:
       context: .
       dockerfile: ./Dockerfile
-    environment:
-      NODE_ENV: dev
     ports:
-      - 3000:3000
+      - "80:80"
