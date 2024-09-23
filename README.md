@@ -35,3 +35,4 @@ export default {
 - docker build . -t "generic_name:vx.x"
 - docker run -p 3000:3000 generic_name:vx.x
 - docker compose up
+- docker-compose exec postgres psql -U postgres -d mydatabase
