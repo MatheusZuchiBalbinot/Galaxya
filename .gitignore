@@ -10,7 +10,6 @@ yarn-debug.log*
 yarn-error.log*
 
 # Editor directories and files
-.vscode/
 .idea/
 .DS_Store
 
@@ -39,3 +38,6 @@ yarn-error.log*
 
 # MacOS files
 *.DS_Store
+
+# Jest
+coverage/

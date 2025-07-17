@@ -1,0 +1,55 @@
+{
+  // Use 4 spaces per tab
+  "editor.tabSize": 4,
+
+  // Insert spaces instead of tab characters
+  "editor.insertSpaces": true,
+
+  // Disable auto-detect indentation to enforce above settings
+  "editor.detectIndentation": false,
+
+  // Auto-format on save
+  "editor.formatOnSave": true,
+
+  // Auto-save files after delay
+  "files.autoSave": "afterDelay",
+
+  // Delay for auto-save (ms)
+  "files.autoSaveDelay": 1000,
+
+  // Show line numbers
+  "editor.lineNumbers": "on",
+
+  // Enable word wrap
+  "editor.wordWrap": "on",
+
+  // Show all whitespace characters
+  "editor.renderWhitespace": "all",
+
+  // Use LF for end of line
+  "files.eol": "\n",
+
+  // Enable quick suggestions except in comments
+  "editor.quickSuggestions": {
+    "other": true,
+    "strings": true,
+    "comments": false
+  },
+
+  // Show minimap sidebar
+  "editor.minimap.enabled": true,
+
+  // Use Prettier as default formatter for TS, TSX, JS, JSX
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}
