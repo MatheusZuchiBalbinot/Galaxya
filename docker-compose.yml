@@ -1,6 +1,6 @@
 services:
   app:
-    container_name: galaxya
+    container_name: app
     build:
       context: .
       dockerfile: Dockerfile
@@ -13,7 +13,7 @@ services:
     restart: unless-stopped
 
   postgres:
-    container_name: postgres_db
+    container_name: postgres
     image: postgres:latest
     ports:
       - "5432:5432"
