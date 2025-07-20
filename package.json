@@ -1,0 +1,11 @@
+{
+  "name": "galaxya",
+  "version": "1.0.0",
+  "private": true,
+  "devDependencies": {
+    "prettier": "^2.8.8"
+  },
+  "scripts": {
+    "format": "prettier --write \"apps/**/*.{ts,tsx,js,jsx,json,css,md}\""
+  }
+}
