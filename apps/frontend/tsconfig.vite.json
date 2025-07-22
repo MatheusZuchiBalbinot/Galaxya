@@ -1,7 +1,7 @@
 {
-  "extends": "./tsconfig.app.json",
-  "compilerOptions": {
-    "types": ["vite/client"]
-  },
-  "include": ["src"]
+	"extends": "./tsconfig.app.json",
+	"compilerOptions": {
+		"types": ["vite/client"]
+	},
+	"include": ["src"]
 }
