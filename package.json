@@ -3,9 +3,15 @@
   "version": "1.0.0",
   "private": true,
   "devDependencies": {
+    "concurrently": "^9.2.0",
     "prettier": "^2.8.8"
   },
+  "workspaces": [
+    "apps/frontend",
+    "apps/backend"
+  ],
   "scripts": {
-    "format": "prettier --write \"apps/**/*.{ts,tsx,js,jsx,json,css,md}\""
+    "format": "prettier --write \"apps/**/*.{ts,tsx,js,jsx,json,css,md}\"",
+    "dev": "concurrently -k -n FRONTEND,BACKEND -c green,blue \"npm run dev --workspace=frontend\" \"npm run start:dev --workspace=backend\""
   }
 }
