@@ -1,4 +1,4 @@
-import { Controller, Get } from '@nestjs/common';
+import { Controller, Get, Post } from '@nestjs/common';
 
 @Controller('api')
 export class AppController {
@@ -9,6 +9,11 @@ export class AppController {
 
 	@Get('hello')
 	getHello() {
+		return { message: 'Hello from NestJS!' };
+	}
+
+	@Post('login')
+	postLogin() {
 		return { message: 'Hello from NestJS!' };
 	}
 }
